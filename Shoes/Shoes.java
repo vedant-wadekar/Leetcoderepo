@@ -6,8 +6,15 @@ for(int i=0;i<str.length;i++){
 int start = 0;
 int end = arr.length-1;
 while(start<end){
-if(str[start].contains("L") && str[end].contains("R") && (str[start].charAt(0)).equals(str[end].charAt(0)){
+if(str[start].contains("L") && str[end].contains("R") || str[start].contains("R") && str[end].contains("L")&& (str[start].charAt(0)).equals(str[end].charAt(0)){
+count++;
+System.out.println("("+
+start++;
+
+}else{
+end--;
 } 
+
 }
 
 }
